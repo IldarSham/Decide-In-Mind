@@ -1,5 +1,5 @@
 # Decide-In-Mind
-Brain training app for iOS  
+Brain training app for iOS. Math expressions are voiced. You have to solve them in your mind.
 https://youtu.be/XwKv4HsXZgQ
 
 ## Screens
