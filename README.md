@@ -1,5 +1,5 @@
 # Decide-In-Mind
-iOS brain training app  
+Brain training app for iOS  
 https://youtu.be/XwKv4HsXZgQ
 
 ## Screens
