@@ -6,3 +6,4 @@ https://youtu.be/XwKv4HsXZgQ
 ![Image](https://raw.githubusercontent.com/IldarSham/Decide-In-Mind/main/Images/Main.PNG)
 ![Image](https://raw.githubusercontent.com/IldarSham/Decide-In-Mind/main/Images/Game.PNG)
 ![Image](https://raw.githubusercontent.com/IldarSham/Decide-In-Mind/main/Images/Settings.PNG)
+![Image](https://raw.githubusercontent.com/IldarSham/Decide-In-Mind/main/Images/SelectExpression.PNG)
