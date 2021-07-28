@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardView" customModule="xibtest" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RcZ-du-D75">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="W9m-EV-kbr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="MpS-d3-4E3">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                            <subviews>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfF-Nd-dn6">
+                                    <rect key="frame" x="0.0" y="0.0" width="93" height="79.5"/>
+                                    <color key="backgroundColor" red="0.81176470590000005" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                    <state key="normal" title="7">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="rUT-v0-ReK"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="OWq-Uc-TXF"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="Oge-HQ-17i"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7J-vT-0X2">
+                                    <rect key="frame" x="94" y="0.0" width="93" height="79.5"/>
+                                    <color key="backgroundColor" red="0.81176470590000005" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                    <state key="normal" title="8">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="EXl-4B-2cn"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="ZoK-8i-eYs"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="Dls-78-57W"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNd-e0-fue">
+                                    <rect key="frame" x="188" y="0.0" width="93" height="79.5"/>
+                                    <color key="backgroundColor" red="0.81176470590000005" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                    <state key="normal" title="9">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="HAh-ta-7Y3"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="zE8-vs-2Ph"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="7Ml-wz-rUw"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06r-2l-gFX">
+                                    <rect key="frame" x="282" y="0.0" width="93" height="79.5"/>
+                                    <color key="backgroundColor" red="0.94117647058823528" green="0.5490196078431373" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                        <imageReference key="image" image="checkmark" catalog="system" renderingMode="original"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="9RK-vJ-Mxu"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="aOM-TQ-gQC"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="iZk-0B-jhb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WSh-C8-o2I">
+                            <rect key="frame" x="0.0" y="80.5" width="375" height="79"/>
+                            <subviews>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zl5-aB-evb">
+                                    <rect key="frame" x="0.0" y="0.0" width="93" height="79"/>
+                                    <color key="backgroundColor" red="0.81176470590000005" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                    <state key="normal" title="4">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="l89-QR-Nr9"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="UcD-Ld-2l1"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="p5k-M2-LBO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtK-tE-5hF">
+                                    <rect key="frame" x="94" y="0.0" width="93" height="79"/>
+                                    <color key="backgroundColor" red="0.81176470590000005" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                    <state key="normal" title="5">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="ka3-v6-y2t"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="tog-tl-5HS"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="3xK-nl-ctm"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBF-YE-af2">
+                                    <rect key="frame" x="188" y="0.0" width="93" height="79"/>
+                                    <color key="backgroundColor" red="0.81176470590000005" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                    <state key="normal" title="6">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="fdB-20-m71"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="e5f-6f-YTg"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="hmH-gG-DiE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQs-SS-TWf">
+                                    <rect key="frame" x="282" y="0.0" width="93" height="79"/>
+                                    <color key="backgroundColor" red="0.94117647058823528" green="0.5490196078431373" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                        <imageReference key="image" image="multiply" catalog="system" symbolScale="large" renderingMode="original"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="lAS-0t-cKp"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="75j-eB-Cn4"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="G9R-U7-Ued"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="oSj-g9-9Rv">
+                            <rect key="frame" x="0.0" y="160.5" width="375" height="79.5"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2x-jP-uok">
+                                    <rect key="frame" x="0.0" y="0.0" width="93" height="79.5"/>
+                                    <color key="backgroundColor" red="0.81176470588235294" green="0.80784313725490198" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="9jl-gh-oLx"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="Qec-eO-xIN"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="2f6-aD-ebP"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvC-s5-5zl">
+                                    <rect key="frame" x="94" y="0.0" width="93" height="79.5"/>
+                                    <color key="backgroundColor" red="0.81176470590000005" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                    <state key="normal" title="2">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="fDK-da-wjV"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="Ox1-uS-y2l"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="6QY-6O-lsT"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aES-8M-rsl">
+                                    <rect key="frame" x="188" y="0.0" width="93" height="79.5"/>
+                                    <color key="backgroundColor" red="0.81176470590000005" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                    <state key="normal" title="3">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="pha-kd-glC"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="rio-UQ-JPV"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="UXU-s7-4Pg"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY2-w0-qo0">
+                                    <rect key="frame" x="282" y="0.0" width="93" height="79.5"/>
+                                    <color key="backgroundColor" red="0.94117647058823528" green="0.5490196078431373" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                        <imageReference key="image" image="forward" catalog="system" symbolScale="large" renderingMode="original"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="6h8-WX-PwE"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="F1J-t2-Ire"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="Po0-fp-80Y"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="jQm-MO-FVP">
+                            <rect key="frame" x="0.0" y="241" width="375" height="79"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="290-zi-BcB">
+                                    <rect key="frame" x="0.0" y="0.0" width="281" height="79"/>
+                                    <color key="backgroundColor" red="0.81176470588235294" green="0.80784313725490198" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                    <state key="normal" title="0">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="150-HG-Bov"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="Qd8-Be-Ws8"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="UZJ-DX-2dd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gto-HN-LDv">
+                                    <rect key="frame" x="282" y="0.0" width="93" height="79"/>
+                                    <color key="backgroundColor" red="0.94117647058823528" green="0.5490196078431373" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                        <imageReference key="image" image="delete.left" catalog="system" symbolScale="large" renderingMode="original"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="byt-tY-7ds"/>
+                                        <action selector="touchDragExit:" destination="-1" eventType="touchDragExit" id="5y6-ja-zZU"/>
+                                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="T1H-jc-R3a"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="290-zi-BcB" firstAttribute="trailing" secondItem="aES-8M-rsl" secondAttribute="trailing" id="ise-PJ-Yr0"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="A3J-P9-CuU"/>
+            <constraints>
+                <constraint firstItem="W9m-EV-kbr" firstAttribute="top" secondItem="A3J-P9-CuU" secondAttribute="top" id="17y-Om-J9l"/>
+                <constraint firstItem="W9m-EV-kbr" firstAttribute="leading" secondItem="A3J-P9-CuU" secondAttribute="leading" id="Ml7-FX-pJZ"/>
+                <constraint firstItem="W9m-EV-kbr" firstAttribute="bottom" secondItem="A3J-P9-CuU" secondAttribute="bottom" id="fhQ-zz-aOY"/>
+                <constraint firstItem="W9m-EV-kbr" firstAttribute="trailing" secondItem="A3J-P9-CuU" secondAttribute="trailing" id="i5p-4o-UfQ"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="159.19999999999999" y="-62.068965517241381"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="forward" catalog="system" width="128" height="79"/>
+        <image name="multiply" catalog="system" width="128" height="111"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
