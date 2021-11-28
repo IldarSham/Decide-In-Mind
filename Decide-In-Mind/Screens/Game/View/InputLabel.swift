@@ -17,6 +17,20 @@ class InputLabel: UILabel {
         self.numberOfLines = 0
     }
     
+    func errorAction() {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.transform = CGAffineTransform(translationX: -20, y: 0)
+        }, completion: { _ in
+            UIView.animate(withDuration: 0.2, animations: {
+                self.transform = CGAffineTransform(translationX: 20, y: 0)
+            }, completion: { _ in
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.transform = CGAffineTransform(translationX: 0, y: 0)
+                }, completion: nil)
+            })
+        })
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

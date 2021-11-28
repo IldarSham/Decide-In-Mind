@@ -26,7 +26,7 @@ class GameViewController: UIViewController {
         
         if UserSettings.countdown {
             setupCountdownLabel()
-            animationCountdown(completion: startGame)
+            countdownLabel.startCountdown(completion: startGame)
         } else {
             startGame()
         }
@@ -84,50 +84,6 @@ extension GameViewController {
     }
 }
 
-// MARK: Animations
-extension GameViewController {
-    
-    func animationCountdown(completion: @escaping () -> Void) {
-        var countdown = 5
-        
-        var animation = { [self] in
-            if countdown > 0 {
-                countdownLabel.text = String(countdown)
-                        
-                UIView.animate(withDuration: 0.5, animations: {
-                    countdownLabel.alpha = 1.0
-                }, completion: { _ in
-                    UIView.animate(withDuration: 0.5, animations: {
-                        countdownLabel.alpha = 0.0
-                    }, completion: { _ in
-                        countdown -= 1
-                        animation()
-                    })
-                })
-            } else {
-                countdownLabel.isHidden = true
-                completion()
-            }
-        }
-        
-        animation()
-    }
-    
-    func animationError() {
-        UIView.animate(withDuration: 0.2, animations: {
-            self.inputLabel.transform = CGAffineTransform(translationX: -20, y: 0)
-        }, completion: { _ in
-            UIView.animate(withDuration: 0.2, animations: {
-                self.inputLabel.transform = CGAffineTransform(translationX: 20, y: 0)
-            }, completion: { _ in
-                UIView.animate(withDuration: 0.2, animations: {
-                    self.inputLabel.transform = CGAffineTransform(translationX: 0, y: 0)
-                }, completion: nil)
-            })
-        })
-    }
-}
-
 // MARK: Game
 extension GameViewController {
     
@@ -175,7 +131,7 @@ extension GameViewController: KeyboardDelegate {
                 self.speak(expression.syncText)
             }
         } else {
-            animationError()
+            inputLabel.errorAction()
         }
     }
     

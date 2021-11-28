@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dPT-29-N4m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dPT-29-N4m">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,14 +12,14 @@
         <!--Результаты-->
         <scene sceneID="t2H-Rw-sex">
             <objects>
-                <tableViewController id="LgC-mv-vU2" customClass="ResultsViewController" customModule="xibtest" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="LgC-mv-vU2" customClass="ResultsViewController" customModule="Decide_In_Mind" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3wo-Bk-Z8q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="55" id="VNG-zh-QMX" customClass="ResultsViewCell" customModule="xibtest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="375" height="55"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="55" id="VNG-zh-QMX" customClass="ResultsViewCell" customModule="Decide_In_Mind" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VNG-zh-QMX" id="63Y-Q4-CYK">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
@@ -67,7 +68,7 @@
         <!--Реши в уме!-->
         <scene sceneID="vWV-P4-zXE">
             <objects>
-                <viewController id="Huo-Og-mOZ" customClass="MainViewController" customModule="xibtest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Huo-Og-mOZ" customClass="MainViewController" customModule="Decide_In_Mind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x9M-fk-yAS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +132,7 @@
         <!--Game View Controller-->
         <scene sceneID="tkO-jh-c4f">
             <objects>
-                <viewController storyboardIdentifier="Game" id="js1-vR-RXv" customClass="GameViewController" customModule="xibtest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Game" id="js1-vR-RXv" customClass="GameViewController" customModule="Decide_In_Mind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uiI-id-7a8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,7 +147,7 @@
         <!--Настройки-->
         <scene sceneID="fg4-TG-nPd">
             <objects>
-                <tableViewController id="kHN-JE-A0U" customClass="SettingsViewController" customModule="xibtest" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="kHN-JE-A0U" customClass="SettingsViewController" customModule="Decide_In_Mind" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Oza-xH-eyv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +272,7 @@
         <!--Выбор выражений-->
         <scene sceneID="9G0-sF-hos">
             <objects>
-                <tableViewController id="Hl2-et-Hpe" customClass="SelectExpressionViewController" customModule="xibtest" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Hl2-et-Hpe" customClass="SelectExpressionViewController" customModule="Decide_In_Mind" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Ue1-HK-UGU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -429,7 +430,7 @@
         <!--Общая продолжительность-->
         <scene sceneID="qB2-gx-egW">
             <objects>
-                <viewController id="8El-uC-lTB" customClass="TotalDurationViewController" customModule="xibtest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8El-uC-lTB" customClass="TotalDurationViewController" customModule="Decide_In_Mind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zxS-Dv-Hmb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

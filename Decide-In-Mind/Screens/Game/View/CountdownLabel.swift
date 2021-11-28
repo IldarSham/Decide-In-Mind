@@ -6,7 +6,7 @@
 import UIKit
 
 class CountdownLabel: UILabel {
-
+    
     init() {
         super.init(frame: .zero)
         
@@ -16,6 +16,40 @@ class CountdownLabel: UILabel {
         self.numberOfLines = 0
         self.textAlignment = .center
         self.alpha = 0.0
+    }
+    
+    typealias completionHandler = () -> Void
+    
+    func startCountdown(completion: @escaping completionHandler) {
+        let queue = DispatchQueue(label: "AnimationQueue", qos: .userInteractive)
+        let semaphore = DispatchSemaphore(value: 0)
+        
+        let item = DispatchWorkItem { [unowned self] in
+            for i in stride(from: 5, through: 1, by: -1) {
+                DispatchQueue.main.async {
+                    text = String(i)
+                    show { hide { semaphore.signal() } }
+                }
+                
+                semaphore.wait()
+            }
+        }
+        
+        item.notify(queue: DispatchQueue.main, execute: completion)
+        
+        queue.async(execute: item)
+    }
+    
+    func show(completion: @escaping completionHandler) {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.alpha = 1.0
+        }, completion: { _ in completion() })
+    }
+    
+    func hide(completion: @escaping completionHandler) {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.alpha = 0.0
+        }, completion: { _ in completion() })
     }
     
     required init?(coder: NSCoder) {
