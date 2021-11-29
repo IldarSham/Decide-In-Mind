@@ -33,7 +33,7 @@ extension ResultsViewController {
         let date = results[indexPath.row].date!
         let calendar = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date)
         
-        cell.subtitle.text = "\(calendar.day!) \(months[calendar.month!]) \(calendar.year!) года, \(calendar.hour!):\(calendar.minute!)"
+        cell.subtitle.text = "\(calendar.day!) \(months[calendar.month! - 1]) \(calendar.year!) года, \(calendar.hour!):\(calendar.minute!)"
         
         return cell
     }
