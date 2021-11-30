@@ -12,7 +12,7 @@ class GameViewController: UIViewController {
     let inputLabel = InputLabel()
     let progressView = ProgressView()
     let keyboardView = KeyboardView()
-    
+        
     let game = Game(selectedExpressions: UserSettings.selectedExpressions)
     
     let synthesizer = AVSpeechSynthesizer()
@@ -26,7 +26,7 @@ class GameViewController: UIViewController {
         
         if UserSettings.countdown {
             setupCountdownLabel()
-            countdownLabel.startCountdown(completion: startGame)
+            countdownLabel.startCountdown(from: 5, completion: startGame)
         } else {
             startGame()
         }
@@ -194,7 +194,7 @@ extension GameViewController {
     
     func totalDurationTimer(timer: Timer) {
         progressView.progress += addingToProgress
-        
+            
         if progressView.progress == 1.0 {
             stopGame(forced: false)
         }

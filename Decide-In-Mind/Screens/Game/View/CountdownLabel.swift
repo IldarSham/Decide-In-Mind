@@ -20,12 +20,12 @@ class CountdownLabel: UILabel {
     
     typealias completionHandler = () -> Void
     
-    func startCountdown(completion: @escaping completionHandler) {
+    func startCountdown(from: Int, completion: @escaping completionHandler) {
         let queue = DispatchQueue(label: "AnimationQueue", qos: .userInteractive)
         let semaphore = DispatchSemaphore(value: 0)
         
         let item = DispatchWorkItem { [unowned self] in
-            for i in stride(from: 5, through: 1, by: -1) {
+            for i in stride(from: from, through: 1, by: -1) {
                 DispatchQueue.main.async {
                     text = String(i)
                     show { hide { semaphore.signal() } }
@@ -40,13 +40,13 @@ class CountdownLabel: UILabel {
         queue.async(execute: item)
     }
     
-    func show(completion: @escaping completionHandler) {
+    private func show(completion: @escaping completionHandler) {
         UIView.animate(withDuration: 0.5, animations: {
             self.alpha = 1.0
         }, completion: { _ in completion() })
     }
     
-    func hide(completion: @escaping completionHandler) {
+    private func hide(completion: @escaping completionHandler) {
         UIView.animate(withDuration: 0.5, animations: {
             self.alpha = 0.0
         }, completion: { _ in completion() })
