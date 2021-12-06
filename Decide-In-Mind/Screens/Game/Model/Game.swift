@@ -7,22 +7,24 @@ import Foundation
 
 class Game {
     
-    private let expressionGenerator = ExpressionGenerator()
+    let settings: GameSettings
     
-    private let selectedExpressions: [Int]
-    private let expressionTypes: [Int]
+    let expressionGenerator = ExpressionGenerator()
     
-    private var currentExpression: ExpressionData?
+    var currentExpression: ExpressionData?
     
     var solutions: Int = 0
+        
+    typealias completionHandler = (_ expression: ExpressionData) -> ()
     
-    init(selectedExpressions: [Int]) {
-        self.selectedExpressions = selectedExpressions
-        self.expressionTypes = selectedExpressions.indices.filter { selectedExpressions[$0] != -1 }
-    }
-    
-    func start(completion: (_ expression: ExpressionData) -> ()) {
-        currentExpression = generateExpression()
+    func start(completion: completionHandler) {
+        let randomExpression = settings.expressionSettings.randomElement()!
+        
+        let expressionType = randomExpression.expressionType
+        let expressionComplexity = randomExpression.expressionComplexity
+        
+        currentExpression = expressionGenerator.generate(type: expressionType, complexity: expressionComplexity)
+        
         completion(currentExpression!)
     }
     
@@ -37,20 +39,7 @@ class Game {
         return false
     }
     
-    private func generateExpression() -> ExpressionData {
-        let randExpressionType = expressionTypes.randomElement()
-        
-        var expressionData: ExpressionData!
-        
-        switch randExpressionType {
-            case 0:
-                expressionData = expressionGenerator.generateAddition(type: selectedExpressions[0])
-            case 1:
-                expressionData = expressionGenerator.generateSubtraction(type: selectedExpressions[1])
-            default:
-                break
-        }
-            
-        return expressionData
+    init(settings: GameSettings) {
+        self.settings = settings
     }
 }

@@ -5,30 +5,29 @@
 
 import Foundation
 
-struct ExpressionData {
-    let syncText: String
-    let result: Int
-}
-
 struct ExpressionGenerator {
     
-    private let ranges = [
-        (min: 10, max: 99),
-        (min: 100, max: 999),
-        (min: 1000, max: 9999)
-    ]
+    func generate(type: ExpressionType, complexity: ExpressionComplexity) -> ExpressionData {
+        type.generate(range: complexity.range())
+    }
+}
+
+enum ExpressionComplexity: Int {
     
-    func generateAddition(type: Int) -> ExpressionData {
-        let a = Int.random(in: ranges[type].min...ranges[type].max)
-        let b = Int.random(in: ranges[type].min...ranges[type].max)
+    case low
+    case medium
+    case high
+    
+    func range() -> ClosedRange<Int> {
         
-        return ExpressionData(syncText: "\(a) + \(b)", result: a + b)
+        switch self {
+        case .low:
+            return 10...99
+        case .medium:
+            return 100...999
+        case .high:
+            return 1000...9999
+        }
     }
     
-    func generateSubtraction(type: Int) -> ExpressionData {
-        let a = Int.random(in: ranges[type].min...ranges[type].max)
-        let b = Int.random(in: ranges[type].min...a)
-        
-        return ExpressionData(syncText: "\(a) минус \(b)", result: a - b)
-    }
 }

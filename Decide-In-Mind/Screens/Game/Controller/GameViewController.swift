@@ -13,7 +13,7 @@ class GameViewController: UIViewController {
     let progressView = ProgressView()
     let keyboardView = KeyboardView()
         
-    let game = Game(selectedExpressions: UserSettings.selectedExpressions)
+    let game = Game(settings: GameSettings(selectedExpressions: UserSettings.selectedExpressions))
     
     let synthesizer = AVSpeechSynthesizer()
     

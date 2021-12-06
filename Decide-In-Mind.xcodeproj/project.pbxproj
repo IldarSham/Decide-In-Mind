@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7434D424275E609200C517A1 /* ExpressionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434D423275E609200C517A1 /* ExpressionType.swift */; };
+		7434D426275E614200C517A1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434D425275E614200C517A1 /* Settings.swift */; };
 		935C86CE2694D4AC00C413DD /* KeyboardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C86CD2694D4AC00C413DD /* KeyboardViewDelegate.swift */; };
 		935C86D02694D65E00C413DD /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C86CF2694D65E00C413DD /* ProgressView.swift */; };
 		935C86D22694D68000C413DD /* InputLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C86D12694D68000C413DD /* InputLabel.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7434D423275E609200C517A1 /* ExpressionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionType.swift; sourceTree = "<group>"; };
+		7434D425275E614200C517A1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		935C86CD2694D4AC00C413DD /* KeyboardViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewDelegate.swift; sourceTree = "<group>"; };
 		935C86CF2694D65E00C413DD /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		935C86D12694D68000C413DD /* InputLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputLabel.swift; sourceTree = "<group>"; };
@@ -203,8 +207,10 @@
 		93CF6F332692F4A300315A8C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				937983B82695986400616A5F /* Game.swift */,
+				7434D423275E609200C517A1 /* ExpressionType.swift */,
 				93CAAEAA2695BAB5003746C0 /* ExpressionGenerator.swift */,
+				7434D425275E614200C517A1 /* Settings.swift */,
+				937983B82695986400616A5F /* Game.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -389,12 +395,14 @@
 				935C86CE2694D4AC00C413DD /* KeyboardViewDelegate.swift in Sources */,
 				937983B92695986400616A5F /* Game.swift in Sources */,
 				93CAAEB6269619A3003746C0 /* xibtest.xcdatamodeld in Sources */,
+				7434D424275E609200C517A1 /* ExpressionType.swift in Sources */,
 				93F88600268C1927008C950A /* AppDelegate.swift in Sources */,
 				93B7EE50268B2F4900BF0493 /* ResultsDataManager.swift in Sources */,
 				93CAAEAB2695BAB5003746C0 /* ExpressionGenerator.swift in Sources */,
 				93FFCA8C2692DCCB002E149E /* SettingsViewController.swift in Sources */,
 				93CAAEB1269618B8003746C0 /* ResultsViewCell.swift in Sources */,
 				939C136B269340C900926BEA /* SelectExpressionViewController.swift in Sources */,
+				7434D426275E614200C517A1 /* Settings.swift in Sources */,
 				93F88602268C1927008C950A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
